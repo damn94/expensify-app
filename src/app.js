@@ -20,27 +20,15 @@ const store = configureStore()
 // console.log(store.getState())	
 // })
 
-//action add expense
-store.dispatch(addExpense({description:'Coffee', amount: 120}))
-store.dispatch(addExpense({description:'Ice cream', amount: 300,createdAt: 1494599910589}))
 
 //SET TEXT FILTERS TO STR
 // store.dispatch(setTextFilter(''))
 
-//SET TIMEOUT ASYN
-// setTimeout(()=>{
-	
-// 	store.dispatch(setTextFilter('ice'))
-// 	setTimeout(()=>{
-// 		store.dispatch(setTextFilter(''))
-
-// 	},3000)
-// }, 3000)
 
 
 //get the state
-const state = store.getState()
-const visibleExpense = getVisibleExpenses(state.expenses,state.filters)
+// const state = store.getState()
+// const visibleExpense = getVisibleExpenses(state.expenses,state.filters)
 
 // console.log(visibleExpense)
 const jsx = (
