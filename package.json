@@ -36,7 +36,8 @@
   "scripts": {
     "dev-server": "webpack-dev-server",
     "serve": "live-server public",
-    "build": "webpack --watch",
+    "build:dev": "webpack --watch",
+    "build:prod": "webpack -p --env=production",
     "test": "jest --config=jest.config.json"
   },
   "name": "expensify-v1",

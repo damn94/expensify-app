@@ -7,8 +7,8 @@ import React from 'react';
 //refactoring component to class
 export class EditExpensePage extends React.Component {
 
-removeExpense =()=> {
 
+removeExpense =()=> {
 	this.props.removeExpense({id: this.props.expense.id})
 	this.props.history.push('/')
 }
@@ -32,7 +32,6 @@ render(){
 
 
 
-
 //COMPONENT EDITEXPENSEDASHBORDPAGE
 // const EditExpensePage = (props) =>{
 // return(
@@ -53,7 +52,7 @@ render(){
 // }
 
 const mapDispatchToProps = (dispatch, props) =>( {
-	editExpense: (id,expense) => dispatch(removeExpense(id, expense)),
+	editExpense: (id,expense) => dispatch(editExpense(id, expense)),
 	removeExpense: (data)=> dispatch(removeExpense(data))
 })
 

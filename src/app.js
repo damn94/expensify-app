@@ -13,7 +13,7 @@ import React from 'react';
 
 //THE STORE
 const store = configureStore()
-
+console.log('testssss')
 
 //WATCH CHANGE IN THE STORE
 // store.subscribe(()=>{
